@@ -3,7 +3,8 @@ import Light from "./components/light";
 import PedestrianLight from "./components/PedestrianLight";
 import Controls from "./components/Controls";
 import { useTrafficCycle } from "./hooks/useTrafficCycle";
-import "./App.css";
+import Info from "./components/info";
+
 
 function App() {
   const [manualMode, setManualMode] = useState(false);
@@ -72,6 +73,7 @@ function App() {
           countdown={activeLight === "green" ? countdown : null}
           showCountDown={!manualMode && !nightMode}
         />
+      
       </div>
 
       <PedestrianLight isWalk={activeLight === "red"} />
