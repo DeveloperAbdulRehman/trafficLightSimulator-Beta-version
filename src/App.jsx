@@ -3,7 +3,8 @@ import Light from "./components/light";
 import PedestrianLight from "./components/PedestrianLight";
 import Controls from "./components/Controls";
 import { useTrafficCycle } from "./hooks/useTrafficCycle";
-import Info from "./components/info";
+
+
 
 
 function App() {
